@@ -4,18 +4,14 @@ GIS and support data for the geologic mapping of Ceres' Nawish quadrangle Ac-H-8
 
 ### Mapping basefiles
 
-''image_mosaic.tif'' and ''dtm.tif'' are the mapping base.
-./data/vector/cc_craters_gt4km.shp
-./data/vector/cc_areas.shp
-./data/raster/image_mosaic.tif
-./data/raster/dtm.tif
-
+''image_mosaic.tif'' and ''dtm.tif'' located in the raster folder are the mapping base.
 
 ### Crater counts
 
 In the data/vector directory there are files useful for crater counting.
 
-cc_areas.shp: areas used for crater counts
+ * ''cc_areas.shp'': areas used for crater counts
+ * ''cc_craters_gt4km.shp'': craters with diameters greater than 4 chilometers.
 
-cc_craters_gt4km.shp: craters with diameters greater than 4 chilometers.
+In the data/crater_counts folder, there are the Craterstats2 file.
 
