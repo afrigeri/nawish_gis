@@ -26,7 +26,7 @@
       <layer-tree-layer expanded="0" id="line_feature20180130184233216" providerKey="ogr" checked="Qt::Unchecked" name="line_feature" source="../data/vector/geologic_map/line_feature.shp">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" id="geo_contact20180130183915611" providerKey="ogr" checked="Qt::Checked" name="geo_contact" source="../data/vector/geologic_map/geo_contact.shp">
+      <layer-tree-layer expanded="1" id="geo_contact20180130183915611" providerKey="ogr" checked="Qt::Unchecked" name="geo_contact" source="../data/vector/geologic_map/geo_contact.shp">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="0" id="point_feature20180130183915613" providerKey="ogr" checked="Qt::Unchecked" name="point_feature" source="../data/vector/geologic_map/point_feature.shp">
@@ -35,7 +35,7 @@
       <layer-tree-layer expanded="1" id="surface_feature20180130183915614" providerKey="ogr" checked="Qt::Unchecked" name="surface_feature" source="../data/vector/geologic_map/surface_feature.shp">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" id="geo_units20180130190121707" providerKey="ogr" checked="Qt::Checked" name="geo_units" source="../data/vector/geologic_map/geo_units.shp">
+      <layer-tree-layer expanded="1" id="geo_units20180130190121707" providerKey="ogr" checked="Qt::Checked" name="geo_units" source="../data/vector/geologic_map/geo_units.shp">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" id="geo_units_centroids20180130182546839" providerKey="ogr" checked="Qt::Unchecked" name="geo_units_centroids" source="../data/vector/geologic_map/geo_units_centroids.shp">
@@ -78,9 +78,6 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-layer expanded="0" id="GeoUnits_selection4Alessandro_2fa1d90d_ad54_4e37_bd49_bd854235ab4c" providerKey="ogr" checked="Qt::Checked" name="GeoUnits_selection4Alessandro" source="../../../progetti/nawish_sync/from_andrea/GeoUnits_selection4Alessandro.shp">
-      <customproperties/>
-    </layer-tree-layer>
     <custom-order enabled="0">
       <item>line_feature20180130184233216</item>
       <item>geo_contact20180130183915611</item>
@@ -96,7 +93,6 @@
       <item>FC_LAMO_V520180118161755744</item>
       <item>image_mosaic_photo20180118183640881</item>
       <item>ccr_1ffd6d11_2110_490e_92c6_122924dfc820</item>
-      <item>GeoUnits_selection4Alessandro_2fa1d90d_ad54_4e37_bd49_bd854235ab4c</item>
       <item>slope_442145a5_addf_4138_b86e_e7d943a18c5d</item>
     </custom-order>
   </layer-tree-group>
@@ -104,7 +100,6 @@
     <individual-layer-settings>
       <layer-setting id="craters_all20180130181234886" enabled="0" type="2" tolerance="0" units="2"/>
       <layer-setting id="surface_feature20180130183915614" enabled="0" type="2" tolerance="0" units="2"/>
-      <layer-setting id="GeoUnits_selection4Alessandro_2fa1d90d_ad54_4e37_bd49_bd854235ab4c" enabled="1" type="2" tolerance="12" units="1"/>
       <layer-setting id="areas_gt4km20180130174249577" enabled="0" type="2" tolerance="0" units="2"/>
       <layer-setting id="areas_all20180130181234884" enabled="0" type="2" tolerance="0" units="2"/>
       <layer-setting id="geo_contact20180130183915611" enabled="0" type="2" tolerance="0" units="2"/>
@@ -147,9 +142,9 @@
           <legendlayerfile isInOverview="0" layerid="line_feature20180130184233216" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" name="geo_contact">
+      <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Unchecked" name="geo_contact">
         <filegroup hidden="false" open="true">
-          <legendlayerfile isInOverview="0" layerid="geo_contact20180130183915611" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="geo_contact20180130183915611" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer open="false" showFeatureCount="0" drawingOrder="-1" checked="Qt::Unchecked" name="point_feature">
@@ -162,8 +157,8 @@
           <legendlayerfile isInOverview="0" layerid="surface_feature20180130183915614" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer open="false" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" name="geo_units">
-        <filegroup hidden="false" open="false">
+      <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" name="geo_units">
+        <filegroup hidden="false" open="true">
           <legendlayerfile isInOverview="0" layerid="geo_units20180130190121707" visible="1"/>
         </filegroup>
       </legendlayer>
@@ -224,11 +219,6 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
-    <legendlayer open="false" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" name="GeoUnits_selection4Alessandro">
-      <filegroup hidden="false" open="false">
-        <legendlayerfile isInOverview="0" layerid="GeoUnits_selection4Alessandro_2fa1d90d_ad54_4e37_bd49_bd854235ab4c" visible="1"/>
-      </filegroup>
-    </legendlayer>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
@@ -314,306 +304,6 @@
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
-    </maplayer>
-    <maplayer hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyAlgorithm="0" simplifyLocal="1" maxScale="0" refreshOnNotifyMessage="" geometry="Polygon" minScale="1e+8" autoRefreshTime="0" simplifyMaxScale="1" simplifyDrawingTol="1">
-      <extent>
-        <xmin>-767170.93114080536179245</xmin>
-        <ymin>-541401.13399999996181577</ymin>
-        <xmax>819164.28039999981410801</xmax>
-        <ymax>544439.12539999990258366</ymax>
-      </extent>
-      <id>GeoUnits_selection4Alessandro_2fa1d90d_ad54_4e37_bd49_bd854235ab4c</id>
-      <datasource>../../../progetti/nawish_sync/from_andrea/GeoUnits_selection4Alessandro.shp</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>GeoUnits_selection4Alessandro</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=eqc +lat_ts=0 +lat_0=0 +lon_0=180 +x_0=0 +y_0=0 +a=470000 +b=470000 +units=m +no_defs</proj4>
-          <srsid>100000</srsid>
-          <srid>0</srid>
-          <authid>USER:100000</authid>
-          <description> * Generated CRS (+proj=eqc +lat_ts=0 +lat_0=0 +lon_0=180 +x_0=0 +y_0=0 +a=470000 +b=470000 +units=m +no_defs)</description>
-          <projectionacronym>eqc</projectionacronym>
-          <ellipsoidacronym></ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <resourceMetadata>
-        <identifier></identifier>
-        <parentidentifier></parentidentifier>
-        <language></language>
-        <type></type>
-        <title></title>
-        <abstract></abstract>
-        <fees></fees>
-        <encoding></encoding>
-        <crs>
-          <spatialrefsys>
-            <proj4></proj4>
-            <srsid>0</srsid>
-            <srid>0</srid>
-            <authid></authid>
-            <description></description>
-            <projectionacronym></projectionacronym>
-            <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
-          </spatialrefsys>
-        </crs>
-        <extent>
-          <spatial crs="" maxy="0" minx="0" maxz="0" minz="0" dimensions="2" maxx="0" miny="0"/>
-          <temporal>
-            <period>
-              <start></start>
-              <end></end>
-            </period>
-          </temporal>
-        </extent>
-        <contact>
-          <name></name>
-          <organization></organization>
-          <position></position>
-          <voice></voice>
-          <fax></fax>
-          <email></email>
-          <role></role>
-        </contact>
-        <links/>
-      </resourceMetadata>
-      <provider encoding="UTF-8">ogr</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="default">
-        <map-layer-style name="default"/>
-      </map-layer-style-manager>
-      <auxiliaryLayer/>
-      <renderer-v2 symbollevels="0" enableorderby="0" forceraster="0" type="singleSymbol">
-        <symbols>
-          <symbol clip_to_extent="1" type="fill" alpha="0.625" name="0">
-            <layer pass="0" locked="0" enabled="1" class="SimpleFill">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="150,150,150,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="247,247,247,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
-                  <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale/>
-      </renderer-v2>
-      <labeling type="simple">
-        <settings>
-          <text-style fontLetterSpacing="0" fontSize="10" fontStrikeout="0" fontWeight="57" namedStyle="Regular" fontUnderline="0" fieldName="OBJECTtype" isExpression="0" multilineHeight="1" fontSizeUnit="Point" textColor="0,0,0,255" useSubstitutions="0" fontFamily="Cantarell" fontWordSpacing="0" textOpacity="1" blendMode="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" previewBkgrdColor="#ffffff" fontItalic="0" fontCapitals="0">
-            <text-buffer bufferNoFill="1" bufferSize="1" bufferColor="255,255,255,255" bufferOpacity="1" bufferDraw="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="MM" bufferJoinStyle="128" bufferBlendMode="0"/>
-            <background shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeDraw="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeFillColor="255,255,255,255" shapeBorderWidth="0" shapeRotation="0" shapeType="0" shapeRotationType="0" shapeRadiiX="0" shapeBlendMode="0" shapeRadiiUnit="MM" shapeSizeType="0" shapeOffsetUnit="MM" shapeOffsetX="0" shapeBorderWidthUnit="MM" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeOpacity="1" shapeBorderColor="128,128,128,255" shapeSVGFile="" shapeSizeUnit="MM" shapeRadiiY="0"/>
-            <shadow shadowUnder="0" shadowRadiusAlphaOnly="0" shadowBlendMode="6" shadowDraw="0" shadowOffsetAngle="135" shadowScale="100" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowOffsetGlobal="1" shadowRadius="1.5" shadowColor="0,0,0,255" shadowRadiusUnit="MM" shadowOffsetUnit="MM" shadowOpacity="0.7"/>
-            <substitutions/>
-          </text-style>
-          <text-format wrapChar="" rightDirectionSymbol=">" placeDirectionSymbol="0" leftDirectionSymbol="&lt;" addDirectionSymbol="0" formatNumbers="0" multilineAlign="4294967295" decimals="3" reverseDirectionSymbol="0" plussign="0"/>
-          <placement labelOffsetMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" distUnits="MM" maxCurvedCharAngleIn="25" priority="5" fitInPolygonOnly="0" rotationAngle="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" offsetType="0" placementFlags="10" repeatDistanceUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" centroidWhole="0" centroidInside="0" distMapUnitScale="3x:0,0,0,0,0,0" xOffset="0" offsetUnits="MM" quadOffset="4" preserveRotation="1" maxCurvedCharAngleOut="-25" placement="0" dist="0"/>
-          <rendering labelPerPart="0" mergeLines="0" scaleVisibility="0" fontMinPixelSize="3" obstacle="1" limitNumLabels="0" scaleMin="0" upsidedownLabels="0" displayAll="0" drawLabels="1" obstacleType="0" zIndex="0" minFeatureSize="0" obstacleFactor="1" fontMaxPixelSize="10000" maxNumLabels="2000" scaleMax="0" fontLimitPixelSize="0"/>
-          <dd_properties>
-            <Option type="Map">
-              <Option type="QString" value="" name="name"/>
-              <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
-            </Option>
-          </dd_properties>
-        </settings>
-      </labeling>
-      <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
-        <property key="variableNames"/>
-        <property key="variableValues"/>
-      </customproperties>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory barWidth="5" maxScaleDenominator="1e+8" backgroundAlpha="255" opacity="1" scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" enabled="0" backgroundColor="#ffffff" penAlpha="255" width="15" penColor="#000000" penWidth="0" minimumSize="0" lineSizeType="MM" scaleDependency="Area" labelPlacementMethod="XHeight" sizeType="MM" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" height="15" minScaleDenominator="0" rotationOffset="270">
-          <fontProperties style="" description="Cantarell,11,-1,5,50,0,0,0,0,0"/>
-          <attribute label="" field="" color="#000000"/>
-        </DiagramCategory>
-      </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings dist="0" showAll="1" obstacle="0" priority="0" zIndex="0" placement="0" linePlacementFlags="18">
-        <properties>
-          <Option type="Map">
-            <Option type="QString" value="" name="name"/>
-            <Option name="properties"/>
-            <Option type="QString" value="collection" name="type"/>
-          </Option>
-        </properties>
-      </DiagramLayerSettings>
-      <fieldConfiguration>
-        <field name="OBJECTtype">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="OBJECTgene">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="OBJECTname">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="COMMENTS">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="SHAPE_Leng">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="SHAPE_Area">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="QUADno">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-      </fieldConfiguration>
-      <aliases>
-        <alias index="0" field="OBJECTtype" name=""/>
-        <alias index="1" field="OBJECTgene" name=""/>
-        <alias index="2" field="OBJECTname" name=""/>
-        <alias index="3" field="COMMENTS" name=""/>
-        <alias index="4" field="SHAPE_Leng" name=""/>
-        <alias index="5" field="SHAPE_Area" name=""/>
-        <alias index="6" field="QUADno" name=""/>
-      </aliases>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <defaults>
-        <default applyOnUpdate="0" field="OBJECTtype" expression=""/>
-        <default applyOnUpdate="0" field="OBJECTgene" expression=""/>
-        <default applyOnUpdate="0" field="OBJECTname" expression=""/>
-        <default applyOnUpdate="0" field="COMMENTS" expression=""/>
-        <default applyOnUpdate="0" field="SHAPE_Leng" expression=""/>
-        <default applyOnUpdate="0" field="SHAPE_Area" expression=""/>
-        <default applyOnUpdate="0" field="QUADno" expression=""/>
-      </defaults>
-      <constraints>
-        <constraint unique_strength="0" constraints="0" field="OBJECTtype" exp_strength="0" notnull_strength="0"/>
-        <constraint unique_strength="0" constraints="0" field="OBJECTgene" exp_strength="0" notnull_strength="0"/>
-        <constraint unique_strength="0" constraints="0" field="OBJECTname" exp_strength="0" notnull_strength="0"/>
-        <constraint unique_strength="0" constraints="0" field="COMMENTS" exp_strength="0" notnull_strength="0"/>
-        <constraint unique_strength="0" constraints="0" field="SHAPE_Leng" exp_strength="0" notnull_strength="0"/>
-        <constraint unique_strength="0" constraints="0" field="SHAPE_Area" exp_strength="0" notnull_strength="0"/>
-        <constraint unique_strength="0" constraints="0" field="QUADno" exp_strength="0" notnull_strength="0"/>
-      </constraints>
-      <constraintExpressions>
-        <constraint desc="" exp="" field="OBJECTtype"/>
-        <constraint desc="" exp="" field="OBJECTgene"/>
-        <constraint desc="" exp="" field="OBJECTname"/>
-        <constraint desc="" exp="" field="COMMENTS"/>
-        <constraint desc="" exp="" field="SHAPE_Leng"/>
-        <constraint desc="" exp="" field="SHAPE_Area"/>
-        <constraint desc="" exp="" field="QUADno"/>
-      </constraintExpressions>
-      <attributeactions>
-        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
-      </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns>
-          <column width="-1" hidden="0" type="field" name="OBJECTtype"/>
-          <column width="-1" hidden="0" type="field" name="OBJECTgene"/>
-          <column width="-1" hidden="0" type="field" name="OBJECTname"/>
-          <column width="-1" hidden="0" type="field" name="COMMENTS"/>
-          <column width="-1" hidden="0" type="field" name="SHAPE_Leng"/>
-          <column width="-1" hidden="0" type="field" name="SHAPE_Area"/>
-          <column width="-1" hidden="0" type="field" name="QUADno"/>
-          <column width="-1" hidden="1" type="actions"/>
-        </columns>
-      </attributetableconfig>
-      <editform>.</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-QGIS forms can have a Python function that is called when the form is
-opened.
-
-Use this function to add extra logic to your forms.
-
-Enter the name of the function in the "Python Init function"
-field.
-An example follows:
-"""
-from qgis.PyQt.QtWidgets import QWidget
-
-def my_form_open(dialog, layer, feature):
-	geom = feature.geometry()
-	control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <editable>
-        <field editable="1" name="COMMENTS"/>
-        <field editable="1" name="OBJECTgene"/>
-        <field editable="1" name="OBJECTname"/>
-        <field editable="1" name="OBJECTtype"/>
-        <field editable="1" name="QUADno"/>
-        <field editable="1" name="SHAPE_Area"/>
-        <field editable="1" name="SHAPE_Leng"/>
-      </editable>
-      <labelOnTop>
-        <field labelOnTop="0" name="COMMENTS"/>
-        <field labelOnTop="0" name="OBJECTgene"/>
-        <field labelOnTop="0" name="OBJECTname"/>
-        <field labelOnTop="0" name="OBJECTtype"/>
-        <field labelOnTop="0" name="QUADno"/>
-        <field labelOnTop="0" name="SHAPE_Area"/>
-        <field labelOnTop="0" name="SHAPE_Leng"/>
-      </labelOnTop>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-      <expressionfields/>
-      <previewExpression>OBJECTname</previewExpression>
-      <mapTip></mapTip>
     </maplayer>
     <maplayer hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" simplifyDrawingHints="1" labelsEnabled="1" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyAlgorithm="0" simplifyLocal="1" maxScale="0" refreshOnNotifyMessage="" geometry="Polygon" minScale="1e+8" autoRefreshTime="0" simplifyMaxScale="1" simplifyDrawingTol="1">
       <extent>
@@ -2137,7 +1827,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2159,7 +1849,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2181,7 +1871,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2203,7 +1893,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2225,7 +1915,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2247,7 +1937,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2269,7 +1959,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
@@ -2291,7 +1981,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
@@ -2313,7 +2003,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2335,7 +2025,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2357,7 +2047,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2379,7 +2069,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
@@ -2401,7 +2091,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2423,7 +2113,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
@@ -2445,7 +2135,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
@@ -2467,7 +2157,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
@@ -2489,7 +2179,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2511,7 +2201,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2533,7 +2223,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -2555,7 +2245,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="Pixel"/>
               <prop k="outline_color" v="0,0,1,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="outline_style" v="no"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
@@ -4274,7 +3964,6 @@ def my_form_open(dialog, layer, feature):
     <layer id="FC_LAMO_V520180118161755744"/>
     <layer id="image_mosaic_photo20180118183640881"/>
     <layer id="ccr_1ffd6d11_2110_490e_92c6_122924dfc820"/>
-    <layer id="GeoUnits_selection4Alessandro_2fa1d90d_ad54_4e37_bd49_bd854235ab4c"/>
     <layer id="slope_442145a5_addf_4138_b86e_e7d943a18c5d"/>
   </layerorder>
   <properties>

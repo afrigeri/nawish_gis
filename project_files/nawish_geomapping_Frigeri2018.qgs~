@@ -21,9 +21,6 @@
     <layer-tree-group expanded="1" checked="Qt::Checked" name="workbench">
       <customproperties/>
     </layer-tree-group>
-    <layer-tree-layer expanded="0" id="GeoUnits_selection4Alessandro_2fa1d90d_ad54_4e37_bd49_bd854235ab4c" providerKey="ogr" checked="Qt::Unchecked" name="GeoUnits_selection4Alessandro" source="../../../progetti/nawish_sync/from_andrea/GeoUnits_selection4Alessandro.shp">
-      <customproperties/>
-    </layer-tree-layer>
     <layer-tree-group expanded="1" checked="Qt::Checked" name="Geologic Map">
       <customproperties/>
       <layer-tree-layer expanded="0" id="line_feature20180130184233216" providerKey="ogr" checked="Qt::Unchecked" name="line_feature" source="../data/vector/geologic_map/line_feature.shp">
@@ -81,6 +78,9 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
+    <layer-tree-layer expanded="0" id="GeoUnits_selection4Alessandro_2fa1d90d_ad54_4e37_bd49_bd854235ab4c" providerKey="ogr" checked="Qt::Checked" name="GeoUnits_selection4Alessandro" source="../../../progetti/nawish_sync/from_andrea/GeoUnits_selection4Alessandro.shp">
+      <customproperties/>
+    </layer-tree-layer>
     <custom-order enabled="0">
       <item>line_feature20180130184233216</item>
       <item>geo_contact20180130183915611</item>
@@ -141,11 +141,6 @@
   </mapcanvas>
   <legend updateDrawingOrder="true">
     <legendgroup open="true" checked="Qt::Checked" name="workbench"/>
-    <legendlayer open="false" showFeatureCount="0" drawingOrder="-1" checked="Qt::Unchecked" name="GeoUnits_selection4Alessandro">
-      <filegroup hidden="false" open="false">
-        <legendlayerfile isInOverview="0" layerid="GeoUnits_selection4Alessandro_2fa1d90d_ad54_4e37_bd49_bd854235ab4c" visible="0"/>
-      </filegroup>
-    </legendlayer>
     <legendgroup open="true" checked="Qt::Checked" name="Geologic Map">
       <legendlayer open="false" showFeatureCount="0" drawingOrder="-1" checked="Qt::Unchecked" name="line_feature">
         <filegroup hidden="false" open="false">
@@ -229,6 +224,11 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
+    <legendlayer open="false" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" name="GeoUnits_selection4Alessandro">
+      <filegroup hidden="false" open="false">
+        <legendlayerfile isInOverview="0" layerid="GeoUnits_selection4Alessandro_2fa1d90d_ad54_4e37_bd49_bd854235ab4c" visible="1"/>
+      </filegroup>
+    </legendlayer>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
@@ -392,7 +392,7 @@
       <auxiliaryLayer/>
       <renderer-v2 symbollevels="0" enableorderby="0" forceraster="0" type="singleSymbol">
         <symbols>
-          <symbol clip_to_extent="1" type="fill" alpha="1" name="0">
+          <symbol clip_to_extent="1" type="fill" alpha="0.625" name="0">
             <layer pass="0" locked="0" enabled="1" class="SimpleFill">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="color" v="150,150,150,255"/>
