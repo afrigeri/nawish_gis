@@ -114,10 +114,10 @@
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>-443025.95224120683269575</xmin>
-      <ymin>-272401.46529249427840114</ymin>
-      <xmax>568162.54600923950783908</xmax>
-      <ymax>296967.35101757198572159</ymax>
+      <xmin>-282342.08191280823666602</xmin>
+      <ymin>-187057.24068045429885387</ymin>
+      <xmax>286243.32122546341270208</xmax>
+      <ymax>183359.42636403726646677</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -1569,7 +1569,6 @@ def my_form_open(dialog, layer, feature):
           <category label="boundary" value="boundary" render="false" symbol="0"/>
           <category label="accurate" value="c_ac" render="true" symbol="1"/>
           <category label="inferred" value="inferred" render="true" symbol="2"/>
-          <category label="" value="" render="true" symbol="3"/>
         </categories>
         <symbols>
           <symbol clip_to_extent="1" name="0" type="line" alpha="1">
@@ -1641,96 +1640,6 @@ def my_form_open(dialog, layer, feature):
               <prop v="MM" k="offset_unit"/>
               <prop v="0" k="use_custom_dash"/>
               <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
-                  <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-          <symbol clip_to_extent="1" name="3" type="line" alpha="1">
-            <layer pass="0" enabled="1" class="SimpleLine" locked="0">
-              <prop v="round" k="capstyle"/>
-              <prop v="5;2" k="customdash"/>
-              <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-              <prop v="MM" k="customdash_unit"/>
-              <prop v="0" k="draw_inside_polygon"/>
-              <prop v="round" k="joinstyle"/>
-              <prop v="227,26,28,255" k="line_color"/>
-              <prop v="solid" k="line_style"/>
-              <prop v="1.86" k="line_width"/>
-              <prop v="MM" k="line_width_unit"/>
-              <prop v="0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="0" k="use_custom_dash"/>
-              <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-              <effect enabled="1" type="effectStack">
-                <effect type="dropShadow">
-                  <prop v="13" k="blend_mode"/>
-                  <prop v="10" k="blur_level"/>
-                  <prop v="0,0,0,255" k="color"/>
-                  <prop v="2" k="draw_mode"/>
-                  <prop v="0" k="enabled"/>
-                  <prop v="135" k="offset_angle"/>
-                  <prop v="2" k="offset_distance"/>
-                  <prop v="MM" k="offset_unit"/>
-                  <prop v="3x:0,0,0,0,0,0" k="offset_unit_scale"/>
-                  <prop v="1" k="opacity"/>
-                </effect>
-                <effect type="outerGlow">
-                  <prop v="0" k="blend_mode"/>
-                  <prop v="3" k="blur_level"/>
-                  <prop v="0,0,255,255" k="color1"/>
-                  <prop v="0,255,0,255" k="color2"/>
-                  <prop v="0" k="color_type"/>
-                  <prop v="0" k="discrete"/>
-                  <prop v="2" k="draw_mode"/>
-                  <prop v="1" k="enabled"/>
-                  <prop v="0.5" k="opacity"/>
-                  <prop v="gradient" k="rampType"/>
-                  <prop v="239,41,41,255" k="single_color"/>
-                  <prop v="2" k="spread"/>
-                  <prop v="MM" k="spread_unit"/>
-                  <prop v="3x:0,0,0,0,0,0" k="spread_unit_scale"/>
-                </effect>
-                <effect type="drawSource">
-                  <prop v="0" k="blend_mode"/>
-                  <prop v="2" k="draw_mode"/>
-                  <prop v="1" k="enabled"/>
-                  <prop v="1" k="opacity"/>
-                </effect>
-                <effect type="innerShadow">
-                  <prop v="13" k="blend_mode"/>
-                  <prop v="10" k="blur_level"/>
-                  <prop v="0,0,0,255" k="color"/>
-                  <prop v="2" k="draw_mode"/>
-                  <prop v="1" k="enabled"/>
-                  <prop v="135" k="offset_angle"/>
-                  <prop v="2" k="offset_distance"/>
-                  <prop v="MM" k="offset_unit"/>
-                  <prop v="3x:0,0,0,0,0,0" k="offset_unit_scale"/>
-                  <prop v="0.146" k="opacity"/>
-                </effect>
-                <effect type="innerGlow">
-                  <prop v="0" k="blend_mode"/>
-                  <prop v="3" k="blur_level"/>
-                  <prop v="0,0,255,255" k="color1"/>
-                  <prop v="0,255,0,255" k="color2"/>
-                  <prop v="0" k="color_type"/>
-                  <prop v="0" k="discrete"/>
-                  <prop v="2" k="draw_mode"/>
-                  <prop v="0" k="enabled"/>
-                  <prop v="0.386" k="opacity"/>
-                  <prop v="gradient" k="rampType"/>
-                  <prop v="255,255,255,255" k="single_color"/>
-                  <prop v="2" k="spread"/>
-                  <prop v="MM" k="spread_unit"/>
-                  <prop v="3x:0,0,0,0,0,0" k="spread_unit_scale"/>
-                </effect>
-              </effect>
               <data_defined_properties>
                 <Option type="Map">
                   <Option value="" name="name" type="QString"/>
@@ -4408,8 +4317,80 @@ def my_form_open(dialog, layer, feature):
           </dataDefinedProperties>
           <customproperties/>
         </LayoutObject>
-        <Extent xmax="626362.35324326599948108" ymin="-355012.30267738417023793" ymax="379578.18840246187755838" xmin="-501225.75947523344075307"/>
+        <Extent xmax="789966.32232013007160276" ymin="-461595.47664951771730557" ymax="486161.36237459542462602" xmin="-664829.72855209745466709"/>
         <LayerSet/>
+        <ComposerMapGrid annotationExpression="" bottomAnnotationPosition="1" gridFramePenThickness="0.29999999999999999" frameAnnotationDistance="1" annotationPrecision="3" leftAnnotationPosition="1" rightFrameDivisions="0" topAnnotationPosition="1" intervalY="0" gridFrameStyle="0" intervalX="0" unit="0" crossLength="3" rightAnnotationDisplay="0" uuid="{0d6c0cf4-2529-4947-846c-e709c44e83bf}" blendMode="0" name="Grid 1" bottomAnnotationDirection="0" frameFillColor2="0,0,0,255" annotationFontColor="0,0,0,255" topFrameDivisions="0" showAnnotation="0" leftAnnotationDisplay="0" annotationFormat="0" frameFillColor1="255,255,255,255" offsetX="0" gridFrameSideFlags="15" bottomFrameDivisions="0" rightAnnotationPosition="1" topAnnotationDisplay="0" bottomAnnotationDisplay="0" topAnnotationDirection="0" gridFramePenColor="0,0,0,255" leftAnnotationDirection="0" offsetY="0" rightAnnotationDirection="0" gridStyle="0" show="1" gridFrameWidth="2" leftFrameDivisions="0">
+          <lineStyle>
+            <symbol clip_to_extent="1" name="" type="line" alpha="1">
+              <layer pass="0" enabled="1" class="SimpleLine" locked="0">
+                <prop v="flat" k="capstyle"/>
+                <prop v="5;2" k="customdash"/>
+                <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+                <prop v="MM" k="customdash_unit"/>
+                <prop v="0" k="draw_inside_polygon"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="0,0,0,255" k="line_color"/>
+                <prop v="solid" k="line_style"/>
+                <prop v="0.3" k="line_width"/>
+                <prop v="MM" k="line_width_unit"/>
+                <prop v="0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="0" k="use_custom_dash"/>
+                <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" name="name" type="QString"/>
+                    <Option name="properties"/>
+                    <Option value="collection" name="type" type="QString"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol clip_to_extent="1" name="" type="marker" alpha="1">
+              <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
+                <prop v="0" k="angle"/>
+                <prop v="0,0,0,255" k="color"/>
+                <prop v="1" k="horizontal_anchor_point"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="circle" k="name"/>
+                <prop v="0,0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="35,35,35,255" k="outline_color"/>
+                <prop v="solid" k="outline_style"/>
+                <prop v="0" k="outline_width"/>
+                <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                <prop v="MM" k="outline_width_unit"/>
+                <prop v="diameter" k="scale_method"/>
+                <prop v="2" k="size"/>
+                <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                <prop v="MM" k="size_unit"/>
+                <prop v="1" k="vertical_anchor_point"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" name="name" type="QString"/>
+                    <Option name="properties"/>
+                    <Option value="collection" name="type" type="QString"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <spatialrefsys>
+            <proj4>+proj=eqc +lat_ts=0 +lat_0=0 +lon_0=180 +x_0=0 +y_0=0 +a=470000 +b=470000 +units=m +no_defs</proj4>
+            <srsid>100000</srsid>
+            <srid>0</srid>
+            <authid>USER:100000</authid>
+            <description> * Generated CRS (+proj=eqc +lat_ts=0 +lat_0=0 +lon_0=180 +x_0=0 +y_0=0 +a=470000 +b=470000 +units=m +no_defs)</description>
+            <projectionacronym>eqc</projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+          <annotationFontProperties style="" description="Cantarell,11,-1,5,50,0,0,0,0,0"/>
+        </ComposerMapGrid>
         <AtlasMap margin="0.10000000000000001" scalingMode="2" atlasDriven="0"/>
       </LayoutItem>
       <customproperties>

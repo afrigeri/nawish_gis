@@ -4352,5 +4352,70 @@ def my_form_open(dialog, layer, feature):
   <visibility-presets/>
   <transformContext/>
   <Annotations/>
-  <Layouts/>
+  <Layouts>
+    <Layout name="Ac-H-08" units="mm" worldFileMap="{59c50cb3-fdd1-45dd-ac4e-442d809b96ee}" printResolution="300">
+      <Snapper snapToGuides="1" tolerance="5" snapToGrid="0" snapToItems="1"/>
+      <Grid resUnits="mm" offsetY="0" offsetX="0" resolution="10" offsetUnits="mm"/>
+      <PageCollection>
+        <symbol clip_to_extent="1" name="" type="fill" alpha="1">
+          <layer pass="0" enabled="1" class="SimpleFill" locked="0">
+            <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+            <prop v="255,255,255,255" k="color"/>
+            <prop v="miter" k="joinstyle"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="35,35,35,255" k="outline_color"/>
+            <prop v="no" k="outline_style"/>
+            <prop v="0.26" k="outline_width"/>
+            <prop v="MM" k="outline_width_unit"/>
+            <prop v="solid" k="style"/>
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" name="name" type="QString"/>
+                <Option name="properties"/>
+                <Option value="collection" name="type" type="QString"/>
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+        <LayoutItem templateUuid="{442c4692-4365-4940-80e7-15462d8446d3}" groupUuid="" id="" frame="false" blendMode="0" visibility="1" size="297,210,mm" referencePoint="0" excludeFromExports="0" positionOnPage="0,0,mm" outlineWidthM="0.3,mm" background="true" positionLock="false" frameJoinStyle="miter" position="0,0,mm" type="65638" itemRotation="0" opacity="1" zValue="0" uuid="{442c4692-4365-4940-80e7-15462d8446d3}">
+          <FrameColor red="0" green="0" blue="0" alpha="255"/>
+          <BackgroundColor red="255" green="255" blue="255" alpha="255"/>
+          <LayoutObject>
+            <dataDefinedProperties>
+              <Option type="Map">
+                <Option value="" name="name" type="QString"/>
+                <Option name="properties"/>
+                <Option value="collection" name="type" type="QString"/>
+              </Option>
+            </dataDefinedProperties>
+            <customproperties/>
+          </LayoutObject>
+        </LayoutItem>
+        <GuideCollection visible="1"/>
+      </PageCollection>
+      <LayoutItem templateUuid="{59c50cb3-fdd1-45dd-ac4e-442d809b96ee}" groupUuid="" id="" frame="false" blendMode="0" visibility="1" size="210.317,137.016,mm" referencePoint="0" keepLayerSet="false" excludeFromExports="0" positionOnPage="38.352,12.9902,mm" outlineWidthM="0.3,mm" background="true" positionLock="false" frameJoinStyle="miter" followPreset="false" position="38.352,12.9902,mm" type="65639" drawCanvasItems="true" itemRotation="0" opacity="1" followPresetName="" mapRotation="0" zValue="1" uuid="{59c50cb3-fdd1-45dd-ac4e-442d809b96ee}">
+        <FrameColor red="0" green="0" blue="0" alpha="255"/>
+        <BackgroundColor red="255" green="255" blue="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <Extent xmax="626362.35324326599948108" ymin="-355012.30267738417023793" ymax="379578.18840246187755838" xmin="-501225.75947523344075307"/>
+        <LayerSet/>
+        <AtlasMap margin="0.10000000000000001" scalingMode="2" atlasDriven="0"/>
+      </LayoutItem>
+      <customproperties>
+        <property value="png" key="atlasRasterFormat"/>
+      </customproperties>
+      <Atlas sortFeatures="0" filenamePattern="'output_'||@atlas_featurenumber" pageNameExpression="" hideCoverage="0" enabled="0" coverageLayer="" filterFeatures="0"/>
+    </Layout>
+  </Layouts>
 </qgis>
