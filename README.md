@@ -4,6 +4,9 @@ GIS and support data for the geologic mapping of Ceres' Nawish quadrangle Ac-H-8
 
 In the project file you can find the nawish_geomapping_Frigeri2018.qgs for Quantum GIS.
 
+![Geologic map of Nawish](doc/images/nawish_geologic.png)
+
+
 
 ### Mapping basefiles
 
